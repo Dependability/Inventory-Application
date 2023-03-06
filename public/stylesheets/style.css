@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+html {
+  font-family: "Shantell Sans", cursive;
+}
+* {
+
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 60vw;
+  margin: 50px auto;
+
+}
+
+.index .count {
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+form * {
+  font-family: "Shantell Sans", cursive;
+}
+form label {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  
+  border: 2px darkgreen solid;
+  font-size: 24px;
+  color: darkgreen;
+  background-color: lightgreen;
+  padding:  10px 20px;
+  border-radius: 9999px;
+  opacity: .7;
+  cursor: pointer;
+
+}
+form input[type="submit"][value="Delete"] {
+  border: 2px darkred solid;
+  color: darkred;
+  background-color: #FFCCBB;
+}
+
+form input[type="submit"]:hover {
+  opacity: 1;
+}
+.index .navigation {
+  display: flex;
+  gap: 20px;
+}
+.index a {
+  font-size: 24px;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
+
+a {
+  color: #00B7FF;
+}
+
+nav {
+  display: flex;
+  height: 72px;
+  width: 60vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}

@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h1=title 
+    ul
+        each microwave in microwave_list 
+            li
+                a(href=microwave.url)=microwave.name
+        else 
+            li No Microwaves.
+        li
+            a(href='/create/microwave') New Microwave

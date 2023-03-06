@@ -1,0 +1,16 @@
+extends layout
+block content
+    .view
+        h1=microwave.name
+        if microwave.description
+            h2 Description 
+            p=microwave.description 
+        h2 Price 
+        p $#{microwave.price} 
+        h2 Stock
+        p=microwave.stock
+        h2 Brand
+        p=microwave.brand.name
+        form(method='post', action='/catalog/microwave/delete')
+            input(type='hidden' value=microwave._id name='_id')
+            input(type='submit' value='Delete')

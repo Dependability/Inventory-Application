@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .index 
+    h1 Microwave Express
+    .count
+      p Brand Count: #{brandCount}
+      p Microwave Count: #{microwaveCount}
+    .navigation
+      a(href='/catalog/brands') Brands
+      a(href='/catalog/microwaves') All Microwaves

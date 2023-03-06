@@ -1,0 +1,26 @@
+extends layout
+
+block content 
+    h2 Create Microwave
+    form(method="post" action='')
+        label Name
+            input(type='text' required name='name' value=(microwave.name ? microwave.name : ''))
+        label Description 
+            textarea(name='desc' value=(microwave.desc ? microwave.desc : ''))
+        label Price 
+            input(type='number' required name='price' value=(microwave.price ? microwave.price : ''))
+        label Stock 
+            input(type='number' required default='0' name='stock' value=(microwave.stock ? microwave.stock : ''))
+        label Brand
+            select(name='brand')
+                each brand in brandList
+                    if brand._id == microwave.brand
+                        option(value=brand._id selected)= brand.name
+                    else
+                        option(value=brand._id)= brand.name
+        input(type='submit')
+    if errors
+        ul
+            each error in errors 
+                li=error.msg
+            

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav
+      h1 Microwave Express
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href="/catalog/microwaves") All Microwaves
+        li
+          a(href="/catalog/brands") All Brands
+    main
+      block content
